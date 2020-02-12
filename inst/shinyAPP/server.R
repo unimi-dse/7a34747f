@@ -57,7 +57,7 @@ server <- function(input, output, session) {
 
   G_2<-reactive({input$"GR2"
 
-    coint.test(matrix[,G_1()], matrix[,G_2()], d = 0, nlag = NULL, output = TRUE) #granger causality test, to be done
+  #  granger<-coint.test(matrix[,G_1()], matrix[,G_2()], d = 0, nlag = NULL, output = TRUE) #granger causality test, to be done
 
   })
 
@@ -89,4 +89,11 @@ server <- function(input, output, session) {
     plot(residuals(Fit_set()),main="Residuals",ylab="Res"),
 
   )
+
+  output$coolplot5<- renderData(
+
+    coint.test(matrix[,G_1()], matrix[,G_2()], d = 0, nlag = NULL, output = TRUE) #granger causality test, to be done
+
+  )
+
 }
