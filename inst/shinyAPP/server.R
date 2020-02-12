@@ -83,7 +83,7 @@ server <- function(input, output, session) {
 
   )
 
-  output$coolplot4<- renderPlot(
+  output$coolplot4<- renderPrint(
 
 
     plot(residuals(Fit_set()),main="Residuals",ylab="Res"),
