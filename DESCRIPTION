@@ -10,4 +10,4 @@ Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.0.2
 Depends: R (>= 3.1.0)
-Imports: forecast,tseries,aTSA,shiny,bigmemory,shinythemes,ggplot2,gridExtra,lattice
+Imports: forecast,tseries,aTSA,shiny,bigmemory,shinythemes,ggplot2,gridExtra,lattice,lmtest
