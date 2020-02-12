@@ -17,10 +17,6 @@ server <- function(input, output, session) {
 
   })
 
-  size<-reactive({input$"Size_input"
-
-
-  })
 
   lag_1<-reactive({input$"lag1"
 
@@ -72,7 +68,7 @@ server <- function(input, output, session) {
 
 #    plot(matrix[,"BP"],matrix[,input$"Plot_input"],col = cor(),type = "l",xlab="Years BP",ylab=input$"Plot_input",cex.lab=1.3,lwd=size()),
 
-    ggplot2::ggplot(matrix,ggplot2::aes_string("BP",input$"Plot_input"))+ ggplot2::geom_point()
+    ggplot2::ggplot(matrix,ggplot2::aes_string("BP",input$"Plot_input"))+ ggplot2::geom_point(color=cor(),size=2)
 
   )
 
