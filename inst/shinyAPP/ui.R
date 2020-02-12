@@ -22,7 +22,7 @@ ui<-fluidPage(titlePanel("Climate Data"),#preparation of the panels for shiny ap
                             plotOutput("coolplot2"),
                             plotOutput("coolplot3"),
                             plotOutput("coolplot4"),
-                            tableOutput("coolplot5"),
+                            verbatimTextOutput("coolplot5"),
                             ))
 
                 )
