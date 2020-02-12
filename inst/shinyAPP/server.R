@@ -90,7 +90,7 @@ server <- function(input, output, session) {
 
   )
 
-  output$coolplot5<- renderData(
+  output$coolplot5<- renderPrint(
 
     coint.test(matrix[,G_1()], matrix[,G_2()], d = 0, nlag = NULL, output = TRUE) #granger causality test, to be done
 
