@@ -65,7 +65,7 @@ server <- function(input, output, session) {
   output$coolplot <- renderPlot( #plot of the data choosen by the user on the panels
 
    # plot(matrix[,"BP"],matrix[,input$"Plot_input"],col = cor(),type = "l",xlab="Years BP",ylab=input$"Plot_input",cex.lab=1.3,lwd=size()),
-   ggplot(matrix[,"BP"],matrix[,input$"Plot_input"],aes(x=Years BP,y=input$"Plot_input"))
+   ggplot(matrix[,"BP"],matrix[,input$"Plot_input"],aes(x="Years BP",y=input$"Plot_input"))
 
   )
 
