@@ -90,7 +90,7 @@ server <- function(input, output, session) {
 
   )
 
-  output$coolplot5<- renderText(
+  output$coolplot5<- renderTable(
 
     aTSA::coint.test(matrix[,G_1()], matrix[,G_2()]) #granger causality test, to be done
 
