@@ -6,10 +6,6 @@ server <- function(input, output, session) {
 
   colour <-"red" #set of reactive variables that allows the user to choose what he would analyse
 
-  type<-reactive({input$"Plot_input"
-
-
-  })
 
 
   cor<-reactive({input$"Color_input"
