@@ -87,9 +87,9 @@ server <- function(input, output, session) {
   )
 
   output$coolplot4<- renderPlot(
-
-
-    plot(residuals(Fit_set()),main="Residuals",ylab="Res"),
+    forecast::checkresiduals(Fit_set())
+    #ggplot2::ggplot(residuals,ggplot2::aes_string(input$"Fit_data"))+ ggplot2::geom_point()
+    #plot(residuals(Fit_set()),main="Residuals",ylab="Res"),
 
   )
 
