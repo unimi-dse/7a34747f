@@ -10,8 +10,8 @@ ui<-fluidPage(titlePanel("Climate Data"),#preparation of the panels for shiny ap
                                sliderInput("ARp", "Autoregressive p",min = 0, max = 100, value = 0),
                                sliderInput("MAq", "Moving Average q",min = 0, max = 100, value = 0),
                                sliderInput("I", "Integration order",min = 0, max = 5, value = 0),
-                               selectInput("GR1", "Engle-Granger Cointegration Test X",choices = c("Temperature", "CO2", "MIL")),
-                               selectInput("GR2", "Engle-Granger Cointegration Test Y",choices = c("Temperature", "CO2", "MIL")),
+                               selectInput("GR1", "Engle-Granger Cointegration Test G_1",choices = c("Temperature", "CO2", "MIL")),
+                               selectInput("GR2", "Engle-Granger Cointegration Test G_2",choices = c("Temperature", "CO2", "MIL")),
                                uiOutput("filter_degree")
 
                                ),
