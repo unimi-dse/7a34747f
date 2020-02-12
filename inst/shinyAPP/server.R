@@ -71,7 +71,8 @@ server <- function(input, output, session) {
   output$coolplot <- renderPlot( #plot of the data choosen by the user on the panels
 
 #    plot(matrix[,"BP"],matrix[,input$"Plot_input"],col = cor(),type = "l",xlab="Years BP",ylab=input$"Plot_input",cex.lab=1.3,lwd=size()),
-    ggplot2::ggplot(matrix[,type()],ggplot2::aes(x="Years_BP",y=type()))
+    dataX <- as.data.frame(matrix[,type()]),
+    ggplot2::ggplot(dataX,ggplot2::aes(x="Years_BBP",y=type()))
 
   )
 
