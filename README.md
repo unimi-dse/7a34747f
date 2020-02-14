@@ -3,7 +3,7 @@
 
 # Introduction  
 
-This package allows to plot and analyze the EPICA DOME C [1,6] data about the temperature and CO2 time series. Also the data taken from the Milankovitch cycles are reported although the real effect on Earth temperature is contested among the scientific community [1]. 
+This package allows to plot and analyze the EPICA DOME C [1,6] data about the temperature variation and CO2 (measured as ppm) time series. Also the data taken from the Milankovitch cycles are reported although the real effect on Earth temperature is contested among the scientific community [1]. 
 
 # Install 
 
