@@ -3,7 +3,7 @@
 
 # Introduction  
 
-This package allows to plot and analyze the EPICA DOME C [1,6] data about the temperature and CO2 time series (more data about other gases maybe provided in future update of the package). Also the data taken from the Milankovitch cycles are reported although the real effect on Earth temperature is contested among the scientific community [1]. 
+This package allows to plot and analyze the EPICA DOME C [1,6] data about the temperature and CO2 time series. Also the data taken from the Milankovitch cycles are reported although the real effect on Earth temperature is contested among the scientific community [1]. 
 
 # Install 
 
@@ -20,7 +20,7 @@ Please wait until the the graphic interface is loaded.
 
 # Description of the application       
 
-The first window allows to select the data the will be plotted, please choose also the color as well as the size of plot. The second panel, that consists in two plot, give the partial autocorrelation and the autocorellation [2,3] of the data loaded in the first panel. The user can choose the number of lag that he is interested to plot (be aware that for a large number of lags the elaboration time becomes large).The user can also choose the parameters of a generic ARIMA model [2,3] for the fitting, once you have choose the parameter please wait until the residual output will be given (last part of the right panel).The app provides also the Granger causality test [2] for the dataset choosen by the user. Please note the the use of the Granger causality test for CO2 -> Temperature is contested in the scientific literature [4], however here it has been included only for didactic proposes. A better approach require to consider the Information Flow technique [5], but its implementation is below the aim of this package. 
+The first window allows to select the data the will be plotted and its colour in the plot. The second panel, that consists in two plots, give the partial autocorrelation and the autocorellation [2,3] of the data loaded in the first panel: the user has to choose the number of lags (be aware that for a large number of lags the elaboration time becomes large).The user has also to choose the parameters of a generic ARIMA model [2,3] for the fitting (p,q and I); once the user has chosen the parameters he has to wait until the residual output will be given: this allows to check if the model is good. The app provides also the Granger causality test [2] for the dataset choosen by the user. Please note the the use of the Granger causality test for CO2 -> Temperature is contested in the scientific literature [4], however here it has been included only for didactic proposes. A better approach require to consider the Information Flow technique [5], but its implementation is below the aim of this package. 
 
 # References
 
